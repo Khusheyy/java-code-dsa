@@ -17,7 +17,7 @@ public class combinations77 {
         for (int i = start; i <= n; i++) {
             temp.add(i);
             backtrack(i + 1, n, k, temp, result);
-            temp.remove(temp.size() - 1); // backtrack
+            temp.remove(temp.size() - 1); // backtrack so that its a recursive approach
         }
     }
 
